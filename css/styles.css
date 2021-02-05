@@ -1,0 +1,144 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+nav > ul {
+    background-color: #15418c;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 75px;
+}
+
+.nav-list a {
+    font-size: 1.75rem;
+    margin-right: 1.25rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#welcome-section {
+    background-color: rgb(37, 41, 49);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4.75rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+#welcome-section > p {
+    font-size: 2.125rem;
+    color: #a2272b;
+}
+
+#projects {
+    background-color: #5d7fb9;
+    padding-top: 4rem;
+}
+
+.projects-section-header {
+    max-width: 640px;
+    font-size: 2.5rem;
+    margin: auto;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 3rem 4rem;
+}
+
+.project {
+    background: #15418c;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.project-image {
+    max-width: 100%;
+    display: block;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.75rem 0;
+}
+
+.project-title:hover {
+    animation-name: project-btn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes project-btn {
+    100% {
+        background: rgba(71, 170, 255, 0.7);
+    }
+}
+
+#contact {
+    background-color: rgb(37, 41, 49);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+#contact > p {
+    font-size: 1.25em;
+    color: #cccccc;
+}
+
+@media (max-width: 420px) {
+    .projects-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 20px;
+    }
+}
+
+.social-media {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media > p {
+    margin: 0 10px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px #eeeeee;
+}
